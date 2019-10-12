@@ -9,7 +9,7 @@
       }
       body
       {
-        max-width: 600px;
+        max-width: 720px;
       }
     p {
       margin-block-end: 0.2em;
@@ -22,22 +22,49 @@
       margin-block-end: 0.3em;
       font-size: 1.2em;
       }
+    .box {
+      width: 300px;
+      float:left;
+      margin: 0px 20px 20px 0px;
+      background-color: #f0f0f0;
+      padding: 0px 20px 20px 20px;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
     </style>
   </head>
   <body>
-    <h1>SaaS Club Vienna</h1>
+    <h1>
+      <img src="./img/logo-cropped.png" alt="SaaS Club Vienna" title="SaaS Club Vienna"/>
+    </h1>
     <p>Welcome to the SaaS Club Vienna, a group of like-minded software-as-a-service entrepreneurs active in and around Vienna.</p>
-    <h2>Next Meetup: October 24, 2019!</h2>
-    <p>Amazing talks waiting for you: Christoph Schachner (Hackabu), Gerald Zankl & Markus Jenul (Bitmovin), Tom Thaler (Werbeakademie Wien), Benjamin Ruschin (WeAreDevelopers),…</p>
-    <p><a href="https://www.meetup.com/SaaS-Club-Vienna/events/265265494/">RSVP today!</a></p>
-    <h2>Facebook Group</h2>
-    <p>Between our meetups, discuss all things SaaS in a private, invite-only environment!</p>
-    <p><a href="https://www.facebook.com/groups/1876868615872242/">Join today!</a></p>
-    <h2>Mailing List</h2>
-    <p>Between our meetups, discuss all things SaaS in a private, invite-only environment!</p>
-    <p><a href="#">Join today!</a></p>
-    <h2>The Directory</h2>
-    <p>Let's map the emerging SaaS sceene of Vienna & Austria together</p>
-    <p><a href="https://app.involve.me/diesocialisten/saas-club-vienna-directory">Register your company today!</a></p>
+    <br>
+    <div class="clearfix">
+      <div class="box">
+        <h2>Next Meetup: October 24, 2019!</h2>
+        <p>Amazing talks waiting for you: Christoph Schachner (Hackabu), Gerald Zankl & Markus Jenul (Bitmovin), Tom Thaler (Werbeakademie Wien), Benjamin Ruschin (WeAreDevelopers),…</p>
+        <p><a href="https://www.meetup.com/SaaS-Club-Vienna/events/265265494/">RSVP today!</a></p>
+      </div>
+      <div class="box">
+        <h2>Facebook Group</h2>
+        <p>Between our meetups, discuss all things SaaS in a private, invite-only environment!</p>
+        <p><a href="https://www.facebook.com/groups/1876868615872242/">Join today!</a></p>
+      </div>
+    </div>
+    <div class="clearfix">
+      <div class="box">
+        <h2>Mailing List</h2>
+        <p>Be the first to receive invites to our meetups and other bonus events!</p>
+        <p><a href="http://eepurl.com/gE4uBP">Signup now!</a></p>
+      </div>
+      <div class="box">
+        <h2>The Directory</h2>
+        <p>Let's map the emerging SaaS sceene of Vienna & Austria together</p>
+        <p><a href="https://app.involve.me/diesocialisten/saas-club-vienna-directory">Register your company today!</a></p>
+      </div>
+    </div>
   </body>
 </html>
